@@ -6,6 +6,7 @@ import { ToastProvider } from '@/Providers/ToastProvider';
 import { ConfettiProvider } from '@/Providers/ConfettiProvider';
 
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <ConfettiProvider />
           <ToastProvider />
+          
           {children}
         </body>
       </html>
